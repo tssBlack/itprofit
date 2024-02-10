@@ -1,0 +1,24 @@
+@use "../index";
+
+$defaultRadius: 10px;
+$defaultBorder: 2px solid index.$secondary-color;
+$validBorder: rgb(0, 252, 113);
+$invalidBorder: rgb(252, 113, 0);
+
+.default-inp {
+  border: $defaultBorder;
+  border-radius: $defaultRadius;
+  padding: 0.5rem;
+  
+  &::placeholder {
+    color: index.$secondary-text;
+  }
+
+  &.valid {
+    border-color: $validBorder;
+  }
+
+  &.invalid {
+    border-color: $invalidBorder;
+  }
+}

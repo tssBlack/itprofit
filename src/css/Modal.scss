@@ -1,0 +1,41 @@
+@use "../index";
+@import "buttons.scss";
+
+$modal-width: 100%;
+$modal-height: 100%;
+
+.modal-btn {
+  width: $modal-width;
+  height: $modal-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupWindow {
+  position: fixed;
+  width: 65%;
+  height: 65%;
+  left: -5000px;
+  top: 0;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: index.$secondary-color;
+  color: #fff;
+  transition: all 1s ease 0s;
+  &.active {
+    left: 0;
+  }
+
+  & h1 {
+    text-align: center;
+  }
+}
+
+body.popup {
+  padding-right: 17px;
+  overflow: hidden;
+}

@@ -1,0 +1,41 @@
+$primary-color: #fff;
+$secondary-color:#212121;
+$primary-text: #212121;
+$secondary-text: #c2c2c2;
+
+body {
+  background: $primary-color;
+  color: $primary-text;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter-Regular;
+}
+body::-webkit-scrollbar{
+  width: 17px;
+  appearance:var(#212121);
+  background-color: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+body::-webkit-scrollbar-thumb:active {
+  background-color: #333;
+}
+
+// @font-face {
+//   font-family: 'Inter-Bold';
+//   src: url('../src/fonts/Inter/Inter-Bold.ttf');
+// }
+// @font-face {
+//   font-family: 'Inter-Medium';
+//   src: url('../src/fonts/Inter/Inter-Medium.ttf');
+// }
+// @font-face {
+//   font-family: 'Inter-Regular';
+//   src: url('../src/fonts/Inter/Inter-Regular.ttf');
+// }
