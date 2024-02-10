@@ -39,3 +39,12 @@ body.popup {
   padding-right: 17px;
   overflow: hidden;
 }
+
+.social-media{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  & a {
+    color:index.$secondary-text;
+  }
+}
