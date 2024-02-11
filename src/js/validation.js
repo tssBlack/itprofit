@@ -59,8 +59,12 @@ export async function validation(e) {
       delete fields.fields;
       inputs.map((i) => {
         i.value="";
+        i.classList.remove('valid')
+        i.classList.remove('invalid')
       })
       textarea.value="";
+      textarea.classList.remove('valid')
+      textarea.classList.remove('invalid')
       console.log(fields);
     } else {
       console.log(fields);
