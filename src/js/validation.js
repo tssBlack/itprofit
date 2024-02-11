@@ -57,6 +57,10 @@ export async function validation(e) {
       fields.status = response.status;
       fields["msg"] = response.message;
       delete fields.fields;
+      inputs.map((i) => {
+        i.value="";
+      })
+      textarea.value="";
       console.log(fields);
     } else {
       console.log(fields);
